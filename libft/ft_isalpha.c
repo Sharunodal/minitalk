@@ -1,0 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: arissane <arissane@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/16 09:40:13 by arissane          #+#    #+#             */
+/*   Updated: 2024/04/25 10:35:53 by arissane         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+// Check if a character is alphabetic. Takes in an int in order to
+// accommodate the full range of ASCII values.
+int	ft_isalpha(int c)
+{
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	else
+		return (0);
+}

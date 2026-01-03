@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk_bonus.h                                   :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arissane <arissane@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/26 11:25:38 by arissane          #+#    #+#             */
-/*   Updated: 2024/08/26 11:25:54 by arissane         ###   ########.fr       */
+/*   Created: 2024/04/16 10:48:17 by arissane          #+#    #+#             */
+/*   Updated: 2024/04/16 10:52:15 by arissane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_BONUS_H
-# define MINITALK_BONUS_H
-
-# include "libft/libft.h"
-
-# include <signal.h>
-
-#endif
+// Check if a character is printable. Takes in an int in order to
+// accommodate the full range of ASCII values.
+int	ft_isprint(int c)
+{
+	if (c >= 32 && c <= 126)
+		return (1);
+	else
+		return (0);
+}

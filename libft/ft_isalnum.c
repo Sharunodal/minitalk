@@ -1,0 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: arissane <arissane@student.hive.fi>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/16 10:33:57 by arissane          #+#    #+#             */
+/*   Updated: 2024/04/18 10:50:06 by arissane         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+// Check if a character is alphanumeric. Takes in an int in order to
+// accommodate the full range of ASCII values.
+int	ft_isalnum(int c)
+{
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	if (c >= '0' && c <= '9')
+		return (2);
+	else
+		return (0);
+}
